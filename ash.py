@@ -1,3 +1,9 @@
+#PRIMARY IMPORTS
+
+import PyQt5
+
+#SECONDARY IMPORTS
+
 from PyQt5.QtWidgets import ( QMainWindow, QLabel, QDesktopWidget, QHBoxLayout,QFileDialog )
 from PyQt5.QtCore import Qt, QSettings, QSize, QPoint
 
