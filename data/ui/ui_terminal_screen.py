@@ -7,3 +7,4 @@ from PyQt5.QtWidgets import *
 
 class Ui_terminalWindow(object):
     def setupUi(self, terminalWindow):
+        return
