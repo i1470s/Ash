@@ -42,8 +42,19 @@ class mainWindow(QMainWindow):
 
 
 #TERMINAL WINDOW
+class terminalWindow(QWidget):
+    def __init__(self):
+        super(terminalWindow, self).__init__(*args, **kwargs)
+        self.process = QProcess(self)
+        self.terminal = QWidget(self)
+        layout = QVBoxLayout(self)
+        layout.addWidget(self.terminal)
+        wid = str(int(self.terminal.winId()))
+        self.process.start('urxvt', ['-embed', wid])
 
-#COMING SOON
+    def closeEvent(self, event):
+        self.process.terminate()
+        self.process.waitForFinished(1000)
 
         
         
