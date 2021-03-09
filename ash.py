@@ -14,6 +14,7 @@ from PyQt5.QtCore import *
 from data.ui.ui_splash_screen import Ui_SplashScreen
 from data.ui.ui_main_screen import Ui_mainWindow
 from data.ui.ui_chat_screen import ui_chatWindow
+from data.ui.ui_terminal_screen import ui_terminalWindow
 
 #SETTINGS
 
@@ -38,7 +39,12 @@ class mainWindow(QMainWindow):
         self.move(self.x() + delta.x(), self.y() + delta.y())
         self.oldPos = event.globalPos()
         
-        
+
+
+#TERMINAL WINDOW
+
+#COMING SOON
+
         
         
 #CHAT WINDOW
