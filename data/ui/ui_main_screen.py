@@ -10,7 +10,7 @@ class Ui_mainWindow(object):
         mainWindow.setObjectName("mainWindow")
         mainWindow.setWindowModality(QtCore.Qt.NonModal)
         mainWindow.resize(1060, 930)
-        mainWindow.setStyleSheet("background-color: #222; color: #fff; border-radius: 25px;")
+        mainWindow.setStyleSheet("background-color: #222; color: #fff; border-radius: 10px;")
         mainWindow.setInputMethodHints(QtCore.Qt.ImhNone)
         mainWindow.setAnimated(True)
         mainWindow.setDocumentMode(False)
